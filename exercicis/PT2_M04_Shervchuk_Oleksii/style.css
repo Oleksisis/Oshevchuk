@@ -1,0 +1,102 @@
+
+.logo {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    
+}
+/*estil per contenedor de musica*/
+.sonido-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.link{
+    width: 120px;
+    height: 120px;
+    background: #f6d74f;
+    border: 2px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.info-of-music h2 {
+    font-family: Comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+audio{
+    width: 300px;
+}
+.news{
+    
+    display:  flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.news img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.members, .instrument{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 23px;
+    display: inline-block;
+    margin-right: 55px;
+}
+.albums{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Comic Sans MS ", cursive;
+}
+.albums th, .albums td {
+    border: 3px solid black;
+    padding: 15px;
+    width: 500px;
+}
+.videoframe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.videoframe video{
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    border: none;
+}
+/*------Estils Mapa-------*/
+.map{
+    width: 100%;
+    height: 50%;
+}
+.map img {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+}
+/*------PEU DE PAGINA-----*/
+footer{
+    margin-top: 25px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 2px solid #ccc;
+    text-align: center;
+    font-style: italic;
+}
+
