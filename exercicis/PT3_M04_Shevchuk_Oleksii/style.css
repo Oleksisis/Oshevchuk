@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(234, 151, 9);
+    margin: 0px;
+}
+
+
+.head{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.head img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.3);
+}
+.head h1{
+    
+    margin: 0;
+    font-size: 40px;
+
+}
+
+
+
+
+.description{
+    position: initial;
+    display: flex;
+    justify-content: center;
+    inset: 12;
+    color: black;
+}
+.description p {
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 700px;
+
+
+}
+
+.images{
+    background-color: rgb(234, 172, 75);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.item{
+    overflow: hidden;
+    border-radius: 2px;
+}
+.item img{
+    width: auto;
+    height: auto;
+}
+.item:hover{
+    transform: scale(2);
+}
