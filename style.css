@@ -1,0 +1,252 @@
+/*Navegació*/
+
+.navbar{
+    /*padding: 5px;*/
+    background-color: rgb(187, 217, 250);
+    width: 100%;
+  
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero{
+    background-color: #f5f6f7;  /*definim el color de fons de la secció principal*/
+    min-height: 400; /*definim l'alçada mínima de la secció principal*/
+    /* fem servir altura mínima perquè si el contingut de la secció és més gran que l'alçada mínima, la secció s'ajustarà a la mida del contingut*/
+    text-align: center; /*centrem el text de la secció principal*/
+}
+
+section {
+  display:flex;
+  flex-direction: column; /*alineat en columnes del contingut*/
+  justify-content: center; /*centrat verticalment*/
+  align-items: center; /*centrat horitzontalment*/  
+}
+
+h1{
+    font-size: 4.5vw; /*mida de la font relativa a la pantalla*/
+}
+
+.hero-imatge-developer{
+    width:200px;
+    height:200px;
+    margin:20px;
+    shape-outside: circle(50%);
+    clip-path: circle(6rem at 6rem 6rem);
+
+    /*alerta perquè pressuposem que la imatge és quadrada*/
+}
+
+.hero h2{
+    font-size: 2.3vw; /*mida de la font relativa a la pantalla*/
+    color: #615151; /*color del text*/
+}
+
+.dark-section{
+    color: white;
+    background-color: #1b1b32; /*color de fons de la secció fosca*/
+} 
+
+.about-me{
+  height: 500px;
+  padding:10px;
+}
+
+
+.about-me div{
+  max-width: 600px;
+  text-align:center;
+}
+
+.section-title{
+  font-size: 2.5vw; /*mida de la font relativa a la pantalla*/
+  font-family:"Vast Shadow"; /*font de la capçalera*/
+  padding: 5px 0; /*espaiat entre la capçalera i el contingut*/    
+}
+
+.row i{
+  font-size: 2vw;
+  color: #7ade30;
+  background-color:#0a0a23 ;
+  padding:8px 19px;
+  border-radius: 50%;
+
+
+}
+
+.columna{
+  margin-bottom: 10px;
+}
+
+
+.badges-contenedor{
+  font-size:1.5vw;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+.badge{
+  margin: 5px,
+}
+
+.experiencia .columna:hover{
+  color:white;
+  background-color: #1b1b32;
+  border: 2px solid #7ade30;
+}
+
+/*Estils generals*/
+.section-title{
+  font-size:clamp(14px,2.5vw,50px); /*defineix el tamany mínim, màxim i òptim de la font*/    
+  font-family:"Vast Shadow"; /*font de la capçalera*/
+  padding: 5px 0; /*espaiat entre la capçalera i el contingut*/    
+}
+
+/*Estils generals*/
+.section-title{
+  font-size:clamp(14px,2.5vw,50px); /*defineix el tamany mínim, màxim i òptim de la font*/    
+  font-family:"Vast Shadow"; /*font de la capçalera*/
+  padding: 5px 0; /*espaiat entre la capçalera i el contingut*/    
+}
+
+/*projectes-------------------------------------------------------*/
+.projectes {
+  padding: 40px;
+}
+
+
+.projectes img{
+  height: 100%;
+  width: 100%;
+  padding:10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+
+.projectes-container{
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+
+.overlay{
+  transition: all 0.3s ease;
+  opacity: 0;  /*transparència de la capa NO ES VEU*/
+  position: absolute;
+  top:50%;  /*al centre vertical */
+  left: 50%;   /* al centre horitzontal */
+  transform: translate(-50%, -50%);  
+  text-align: center;
+ }
+
+
+ .overlay p{
+  font-size:clamp(14px,2.5vw,30px); /*defineix el tamany mínim, màxim i òptim de la font*/    
+  margin-bottom: 0;
+ }
+
+
+.projecte {
+  position: relative;
+}
+
+
+.projecte:hover img {
+  opacity: 0.2;
+}
+
+
+
+.projecte:hover .overlay {
+  opacity: 1;
+}
+
+
+.overlay .icones-contenidor {
+  display: flex;
+  flex-direction: column; /*alineat en columnes del contingut*/
+  justify-content: center; /*centrat verticalment*/
+  align-items: center; /*centrat horitzontalment*/  
+}
+
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/*footer-------------------------------------------------------*/
+
+
+footer {
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+
+.footer-text {
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size:clamp(14px,2.5vw,50px); /*defineix el tamany mínim, màxim i òptim de la font*/    
+  font-family:"Vast Shadow"; /*font de la capçalera*/
+}
+
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+
+.social-icons i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+
+.social-icons a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+
+.social-icons a:hover i {
+  color: black;
+}
+
+
+.drets {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+
+
+
+
+

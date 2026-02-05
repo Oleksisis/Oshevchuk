@@ -1,16 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--favicon-->
+    <link rel="icon" href="images/icona.png" type="image/x-icon">
+   <!--metadades-->    
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oleksii Shevchuk</title>
+    <meta autor="Oleksii Shevchuk" />
+    <meta name="description" content="Portafolis Oleksii Shevchuk" />
+    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, DAM, web, software" />
+    <title>Oleksii Shevchuk | Software Developer</title>
+    <!--Bootstrap CSS i icones-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Oleksii Shevchuk</h1>
-    <a href="exercicis/PT1_M04_Shevchuk_Oleksii/PT1.html">Practica 1</a>
-    <a href="exercicis/PT2_M04_Shevchuk_Oleksii/PT2.html">Practica 2</a>
-    <a href="exercicis/PT3_M04_Shevchuk_Oleksii/PT3.html">Practica 3</a>
+  <!-- carrega el javascript de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-md navbar-light navbar">
+    <!-- Navbar content -->
 
-</body>
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/icona.png" alt="Logo" width="300" height="240" class="d-inline-block align-text-top">
+        </a>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Web design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Exercises</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <section class="hero align-items-stretch">
+        <div>
+            <img class="hero-imatge-developer" src="images/IMG_20251201_214035.jpg" alt="foto personal" />
+            <h1>Hi, I'm Oleksii Shevchuk</h1>
+            <h2>Software Developer and Studend of DAM</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="img-fluid" src="images/desarollo.png" alt="imatge ordinador i llenguatges"/>
+        </div>
+  </section>
+
+
+    <!--section sobre mi-->
+    <section class="about-me dark-section">
+        <div>
+            <h2 class="section-title">Learn more about me</h2>
+            <p class="section-text">I am Student who have 18 year old and I studying informatica for 3 year and i was created this portfolio with languages HTML and CSS to get acquainted with my portfolio, then to conclude thank you so much for reading my portfolio see you soon...
+              Also you can download my CV... 
+            </p>
+        </div>
+
+        <!--botó descarregar cv-->
+            <div class="text-center">
+                <a href="CV OLEKSII SHEVCHUK .pdf" download class="btn btn-primary">
+                  📄 Download CV
+              </a>
+
+    </section>
+
+     <div class="container text-center">
+          <!--tenim una fila -->
+          <div class="row">
+            <!--a dins de la fila hi haurà 3 columnes, una per cada experiencia o coneixement-->
+            <div class="col-12 col-md-4">
+              
+            </div>
+
+
+            <div class="col-12 col-md-4">
+            </div>
+
+
+            <div class="col-12 col-md-4">
+              
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <!--a dins de la fila hi haurà 3 columnes, una per cada experiencia o coneixement-->
+            <div class="columna col-12 col-md-4">
+              <i class="bi bi-filetype-html"></i>
+              <p class="experiencia-title">Web development</p>
+              <p>I build modern and responsive web interfaces using HTML, CSS, JavaScript, 
+                and frameworks such as Bootstrap and Vue. I focus on creating clean, functional designs that adapt 
+                well to different devices while providing a good user experience.</p>
+              <div class="badges-contenedor">
+                <span class="badge bg-primary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-success">Javascript</span>
+                <span class="badge bg-danger">Bootstrap</span>
+                <span class="badge bg-warning text-dark">VUE</span>
+              </div>
+            </div>
+
+
+            <div class="columna col-12 col-md-4">
+              <i class="bi bi-filetype-java"></i>
+              <p class="experiencia-title">Java</p>
+              <p>I work with Java to develop applications and practice object-oriented programming. 
+                I use tools like Eclipse and VS Code, manage environments with JDK, and document projects using 
+                Javadoc to keep code organized and maintainable.</p>
+              <div class="badges-contenedor">
+                <span class="badge bg-primary">Eclipse</span>
+                <span class="badge bg-secondary">JAVADOC</span>
+                <span class="badge bg-success">JDK</span>
+                <span class="badge bg-success">VScode</span>
+              </div>
+            </div>
+
+
+            <div class="columna col-12 col-md-4">
+              <i class="bi bi-cpu"></i>
+              <p class="experiencia-title">O.S.</p>
+              <p>I have experience with Windows and Linux, basic server administration, and Bash scripting for task automation. 
+                This gives me a solid understanding of system operations and supports my development work from a technical perspective.</p>
+              <div class="badges-contenedor">
+                <span class="badge bg-primary">Windows</span>
+                <span class="badge bg-secondary">Linux</span>
+                <span class="badge bg-success">Servers</span>
+                <span class="badge bg-danger">Bash</span>
+              </div>
+            </div>
+        </div>
+
+    <section class="projectes white-section d-flex flex-column">
+      <h2 class="section-title black-text">Web Design</h2>
+      <h3 class="section-description">Some web Exercises developed in the DAM cycle </h3>
+
+      <!--galeria de projectes-->
+      <div class="container text-center projectes-container">
+        <div class="row">
+ 	        <!--projecte 1-->
+          <div class="projecte col-12 col-md-6 col-lg-4">
+              <img src="images/projecte1.png" alt="projecte 1"/>
+              <div class="overlay">
+                <p>Botiga de construcció</p>
+                <div class="icones-contenidor">
+                  <a href="exercicis/PT1_M04_Shevchuk_Oleksii/PT1.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+             </div>
+          </div>
+          
+          <!--projecte 2-->
+          <div class="projecte col-12 col-md-6 col-lg-4">
+              <img src="images/projecte2.png" alt="projecte 2"/>
+              <div class="overlay">
+                <p>Els autors de musica</p>
+                <div class="icones-contenidor">
+                  <a href="exercicis/PT2_M04_Shevchuk_Oleksii/PT2.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+             </div>
+          </div>
+
+          <!--projecte 3-->
+          <div class="projecte col-12 col-md-6 col-lg-4">
+              <img src="images/projecte3.jpg" alt="projecte 3"/>
+              <div class="overlay">
+                <p>Pintors Grans</p>
+                <div class="icones-contenidor">
+                  <a href="exercicis/PT3_M04_Shevchuk_Oleksii/PT3.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+             </div>
+          </div>
+
+
+          
+        </div>
+      </div>
+    </section>
+
+     <!--section contacte-->
+    <footer class="dark-section d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="images/icona.png" alt="logo"/>
+      <p class="footer-text text-center">Contact me</p>
+      <div class= "social-icons d-flex flex-wrap align-items-center justify-content-center">
+        <a href="mailto:homer@hotmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Oleksisis/Oshevchuk" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+      <div class="drets">Created by Oleksii Shevchuk (2026) &#169;</div>
+    </footer>
+
+
+ </body>
 </html>
