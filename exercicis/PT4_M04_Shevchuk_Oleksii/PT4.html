@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Park Ambiental Manresa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <h1>Park Ambiental Del Bages</h1>
+
+    </header>
+
+    <section class="container">
+        <h2>Què es el Park Ambiental</h2>
+
+        <p>
+           El Parc ambiental de Bufalvent és propietat del Consorci del
+            Bages per a la gestió de residus, que és l’entitat pública que gestiona els residus
+            municipals al Bages i part del Moianès: en fa la recollida i el tractament i treballa
+            per canviar els hàbits de la ciutadania.
+            Al Parc ambiental de Bufalvent és on es fa el tractament de residus i, a més, és
+            un espai paisatgístic privilegiat. Està situat al terme municipal de Manresa i el
+            tractament de residus hi conviu amb un entorn ple d’oliveres, barraques de
+            vinya, boscos i animals que hi pasturen. El respecte pel territori i el medi
+            ambient es fa palès en aquest espai, amb unes vistes espectaculars sobre la
+            comarca i sobre Montserrat.
+        </p>
+    </section>
+
+ <!-- IMATGES 360º -->
+    <section class="container">
+        <h2>Imatges 360º destacades</h2>
+        <div class="gallery-360">
+            <div id="panorama" style="width: 100%; height: 400px;"></div>
+            <div id="panorama1" style="width: 100%; height: 400px;"></div>
+            <div id="panorama2" style="width: 100%; height: 400px;"></div>
+            <div id="panorama3" style="width: 100%; height: 400px;"></div>
+            <div id="panorama4" style="width: 100%; height: 400px;"></div>
+            <div id="panorama5" style="width: 100%; height: 400px;"></div>
+            <div id="panorama6" style="width: 100%; height: 400px;"></div>
+            <div id="panorama7" style="width: 100%; height: 400px;"></div>
+            <div id="panorama8" style="width: 100%; height: 400px;"></div>
+            <div id="panorama9" style="width: 100%; height: 400px;"></div>
+        </div>
+    </section>
+
+        <!-- VÍDEO 360º -->
+    <a-scene embedded style="width:100%; height:480px;">
+    <a-assets>
+        <video id="video360" src="Vi.mp4" autoplay loop="true" crossorigin="anonymous"></video>
+    </a-assets>
+
+    <a-videosphere src="#video360"></a-videosphere>
+    </a-scene>
+
+    <!-- MAPA -->
+    <section class="container map">
+        <h2>On es troba?</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2830.585369252301!2d1.822404084857445!3d41.72200970971149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4f64b913c574d%3A0xa350098df35d7f9f!2sParc%20Ambiental%20de%20Bufalvent!5e1!3m2!1sru!2ses!4v1771519268240!5m2!1sru!2ses" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </section>
+
+    <!-- AGRAÏMENTS -->
+    <section class="container">
+        <h2>Agraïments</h2>
+        <div class="links">
+            <a href="https://www.consorcidelbages.cat/parc-ambiental/" target="_blank">Parc Ambiental - Consorci del Bages</a>
+            <a href="https://www.awwwards.com/websites/360/" target="_blank">Inspiració: Webs amb 360º — Awwwards</a>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        &copy 2026 Park Ambiental project - Creada per tu
+    </footer>
+</body>
+
+<script>
+pannellum.viewer('panorama', {
+    type: 'equirectangular',
+    panorama: '0_1general.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama1', {
+    type: 'equirectangular',
+    panorama: '1_1oficines.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama2', {
+    type: 'equirectangular',
+    panorama: '2_1abocador.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama3', {
+    type: 'equirectangular',
+    panorama: '3_plantatransferencia.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama4', {
+    type: 'equirectangular',
+    panorama: '4_motorbiogas.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama5', {
+    type: 'equirectangular',
+    panorama: '5_bassesdaigues.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama6', {
+    type: 'equirectangular',
+    panorama: '6_parcsolar.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama7', {
+    type: 'equirectangular',
+    panorama: '7_1plantacompostatge (1).jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama8', {
+    type: 'equirectangular',
+    panorama: '8_novaplanta.jpg',
+    autoLoad: true
+});
+pannellum.viewer('panorama9', {
+    type: 'equirectangular',
+    panorama: '9_falconeria.jpg',
+    autoLoad: true
+});
+</script>
+</body>
+</html>
+
+</html>
