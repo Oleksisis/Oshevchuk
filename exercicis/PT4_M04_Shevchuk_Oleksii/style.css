@@ -32,18 +32,18 @@ h2 {
   color: #005b96;
 }
 
+h3 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #009396;
+}
 /* GALERÍA SIMPLE */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.gallery img {
-  width: 32%;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
+
 
 /* SECCIÓN 360 */
 .gallery-360 img {
@@ -51,22 +51,15 @@ h2 {
   margin-bottom: 20px;
 }
 
-img.spin { 
-  -webkit-transform: rotate(360deg); 
-  -moz-transform: rotate(360deg); 
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg); 
-}
+
 
 /* VIDEO */
 .video360 {
-  text-align: center;
+  padding: 40px 20px;
+  max-width: 1040px;
+  margin: auto;
 }
-.video360 iframe {
-  width: 100%;
-  height: 480px;
-  border: none;
-}
+
 
 /* MAP */
 .map {
