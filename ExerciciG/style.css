@@ -27,6 +27,7 @@ border-radius: 10px;
 #joc img{
     width: 120px;
     cursor: pointer;
+    background: transparent;
 }
 
 #score{
