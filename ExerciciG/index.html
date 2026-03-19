@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whac-A-Mole</title>
+    <link rel ="stylesheet" href="style.css" >
+        
+</head>
+<body>
+    <h1>Whac-A-Mole</h1>
+    <p>L'objectiu del joc és encertar al talp quan surt del cau, cada vegada que encertis aniràs acumulant punts</p>
+
+    <button onclick="Startgame()">START</button>
+
+    <h2 id="time">Time: 30</h2>
+
+    <div id="joc">
+        <img src="topoNo.jpg" onclick="cop(0)">
+        <img src="topoNo.jpg" onclick="cop(1)">
+        <img src="topoNo.jpg" onclick="cop(2)">
+
+        <img src="topoNo.jpg" onclick="cop(3)">
+        <img src="topoNo.jpg" onclick="cop(4)">
+        <img src="topoNo.jpg" onclick="cop(5)">
+
+        <img src="topoNo.jpg" onclick="cop(6)">
+        <img src="topoNo.jpg" onclick="cop(7)">
+        <img src="topoNo.jpg" onclick="cop(8)">
+
+    </div>
+    <div id="score">
+            Puntuació: <span id="points">0</span>
+        </div>
+    <script src="mole.js"></script>
+
+    
+</body>
+</html>

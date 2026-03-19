@@ -1,0 +1,35 @@
+body{
+    background-image: url("runefall-match3-2D-background-village-houses.jpg");
+    text-align: center;
+    font-family: Arial;
+}
+h1{
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+#joc{
+display:grid;
+grid-template-columns: repeat(3, 120px);
+gap:10px;
+justify-content: center;
+margin-top: 30px;
+/*background-color: #90db7c;*/
+padding: 10px;
+border-radius: 10px;
+}
+
+#joc img{
+    width: 120px;
+    cursor: pointer;
+}
+
+#score{
+font-size:24px;
+margin-top:20px;
+}
